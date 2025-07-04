@@ -1,0 +1,280 @@
+/* SuburbDetail.module.css */
+.suburbDetailPage {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.detailHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.detailTitle h1 {
+  color: #e75480;
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.suburbSubtitle {
+  color: #7a316f;
+  margin: 0.5rem 0 0 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.backBtn {
+  background: linear-gradient(90deg, #e75480 0%, #ff69b4 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px rgba(231, 84, 128, 0.2);
+}
+
+.backBtn:hover {
+  background: linear-gradient(90deg, #ff69b4 0%, #e75480 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(231, 84, 128, 0.3);
+}
+
+.detailContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.suburbStats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.statCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(231, 84, 128, 0.08);
+  border: 1px solid rgba(231, 84, 128, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-4px);
+}
+
+.statIcon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.statCard h3 {
+  color: #e75480;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.statValue {
+  color: #7a316f;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.lifestyleSection h3 {
+  color: #e75480;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.lifestyleTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.descriptionSection h3 {
+  color: #e75480;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.suburbDescription {
+  color: #7a316f;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.mapSection h3 {
+  color: #e75480;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.mapContainer {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.externalLinks h3 {
+  color: #e75480;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.linkButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.externalLinkBtn {
+  background: linear-gradient(90deg, #e75480 0%, #ff69b4 100%);
+  color: white;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px rgba(231, 84, 128, 0.2);
+}
+
+.domainBtn {
+  background: linear-gradient(90deg, #e75480 0%, #ff69b4 100%);
+}
+
+.domainBtn:hover {
+  background: linear-gradient(90deg, #ff69b4 0%, #e75480 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(231, 84, 128, 0.3);
+}
+
+.mapsBtn {
+  background: linear-gradient(90deg, #4285f4 0%, #34a853 100%);
+}
+
+.mapsBtn:hover {
+  background: linear-gradient(90deg, #34a853 0%, #4285f4 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+}
+
+/* No Results Styling */
+.noResults {
+  color: #e75480;
+  font-size: 1.2rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.noResultsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.noResultsIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.noResultsContent h3 {
+  color: #e75480;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.noResultsContent p {
+  color: #7a316f;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.findBtn {
+  background: linear-gradient(90deg, #e75480 0%, #ff69b4 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(231, 84, 128, 0.15);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.findBtn:hover {
+  background: linear-gradient(90deg, #ff69b4 0%, #e75480 100%);
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 6px 20px rgba(231, 84, 128, 0.25);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .suburbDetailPage {
+    padding: 1rem;
+  }
+  
+  .detailHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .detailTitle h1 {
+    font-size: 2rem;
+  }
+  
+  .suburbStats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .linkButtons {
+    flex-direction: column;
+  }
+  
+  .externalLinkBtn {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .suburbStats {
+    grid-template-columns: 1fr;
+  }
+  
+  .statCard {
+    padding: 1rem;
+  }
+  
+  .externalLinkBtn {
+    padding: 0.875rem 1rem;
+    font-size: 0.9rem;
+  }
+} 

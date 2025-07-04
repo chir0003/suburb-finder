@@ -1,0 +1,173 @@
+/* shared.module.css - Common styles used across components */
+
+/* Common button styles */
+.findBtn {
+  background: linear-gradient(90deg, #e75480 0%, #ff69b4 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(231, 84, 128, 0.15);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.findBtn:hover {
+  background: linear-gradient(90deg, #ff69b4 0%, #e75480 100%);
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 6px 20px rgba(231, 84, 128, 0.25);
+}
+
+.findBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.findBtn:disabled:hover {
+  transform: none;
+  background: linear-gradient(90deg, #e75480 0%, #ff69b4 100%);
+}
+
+.backBtn {
+  background: linear-gradient(90deg, #e75480 0%, #ff69b4 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px rgba(231, 84, 128, 0.2);
+}
+
+.backBtn:hover {
+  background: linear-gradient(90deg, #ff69b4 0%, #e75480 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(231, 84, 128, 0.3);
+}
+
+/* Lifestyle chip styles */
+.lifestyleChip {
+  display: flex;
+  align-items: center;
+  background: #fff0f6;
+  border: 1.5px solid #ffb6d5;
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  color: #e75480;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.lifestyleChip.selected, .lifestyleChip:hover {
+  background: #e75480;
+  color: #fff;
+  border: 1.5px solid #e75480;
+  transform: scale(1.05);
+}
+
+.lifestyleChip input[type="checkbox"] {
+  margin-right: 0.5rem;
+  accent-color: #e75480;
+}
+
+/* Loading spinner */
+.loadingContent {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.loadingSpinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* No results styling */
+.noResults {
+  color: #e75480;
+  font-size: 1.2rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.noResultsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.noResultsIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.noResultsContent h3 {
+  color: #e75480;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.noResultsContent p {
+  color: #7a316f;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Form error styling */
+.formError {
+  color: #e75480;
+  background: #fff0f6;
+  border: 1px solid #e75480;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Feedback message styling */
+.feedbackMsg {
+  color: #e75480;
+  background: #fff0f6;
+  border: 1.5px solid #e75480;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Responsive button adjustments */
+@media (max-width: 600px) {
+  .findBtn {
+    padding: 0.875rem 2rem;
+    font-size: 1.1rem;
+  }
+} 

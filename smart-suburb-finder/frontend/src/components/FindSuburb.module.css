@@ -1,0 +1,162 @@
+/* FindSuburb.module.css */
+.findPage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #ffb6d5 0%, #fff0f6 100%);
+}
+
+.findContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.findContent h2 {
+  color: #e75480;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.suburbForm {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(231, 84, 128, 0.08);
+  padding: 2rem 2.5rem;
+  max-width: 480px;
+  margin: 2rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-weight: 500;
+  color: #e75480;
+  margin-bottom: 0.2rem;
+}
+
+.suburbForm input[type="number"] {
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #ffb6d5;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.suburbForm input[type="number"]:focus {
+  border: 1.5px solid #e75480;
+}
+
+.lifestyleOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.lifestyleChip {
+  display: flex;
+  align-items: center;
+  background: #fff0f6;
+  border: 1.5px solid #ffb6d5;
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  color: #e75480;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.lifestyleChip.selected, .lifestyleChip:hover {
+  background: #e75480;
+  color: #fff;
+  border: 1.5px solid #e75480;
+  transform: scale(1.05);
+}
+
+.lifestyleChip input[type="checkbox"] {
+  margin-right: 0.5rem;
+  accent-color: #e75480;
+}
+
+.findBtn {
+  background: linear-gradient(90deg, #e75480 0%, #ff69b4 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(231, 84, 128, 0.15);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.findBtn:hover {
+  background: linear-gradient(90deg, #ff69b4 0%, #e75480 100%);
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 6px 20px rgba(231, 84, 128, 0.25);
+}
+
+.findBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.findBtn:disabled:hover {
+  transform: none;
+  background: linear-gradient(90deg, #e75480 0%, #ff69b4 100%);
+}
+
+.loadingContent {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.loadingSpinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 600px) {
+  .suburbForm {
+    padding: 1.5rem;
+    max-width: 95vw;
+    margin: 1rem;
+  }
+  
+  .lifestyleOptions {
+    justify-content: center;
+  }
+} 

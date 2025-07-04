@@ -1,0 +1,79 @@
+/* Landing.module.css */
+.landing {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #ffb6d5 0%, #fff0f6 100%);
+}
+
+.landingContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.landingContent h1 {
+  font-size: 3rem;
+  color: #e75480;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.landingContent p {
+  font-size: 1.3rem;
+  color: #7a316f;
+  margin-bottom: 2.5rem;
+}
+
+.findBtn {
+  background: linear-gradient(90deg, #e75480 0%, #ff69b4 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(231, 84, 128, 0.15);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.findBtn:hover {
+  background: linear-gradient(90deg, #ff69b4 0%, #e75480 100%);
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 6px 20px rgba(231, 84, 128, 0.25);
+}
+
+.findBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.findBtn:disabled:hover {
+  transform: none;
+  background: linear-gradient(90deg, #e75480 0%, #ff69b4 100%);
+}
+
+@media (max-width: 600px) {
+  .landingContent h1 {
+    font-size: 2rem;
+  }
+  
+  .landingContent p {
+    font-size: 1.1rem;
+  }
+  
+  .findBtn {
+    padding: 0.875rem 2rem;
+    font-size: 1.1rem;
+  }
+} 

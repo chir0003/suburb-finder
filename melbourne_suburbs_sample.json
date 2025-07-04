@@ -1,0 +1,357 @@
+[
+  {
+    "name": "Brunswick",
+    "avg_rent": 550,
+    "commute_time_cbd": 20,
+    "lifestyle": [
+      "vibrant",
+      "student-friendly",
+      "nightlife"
+    ],
+    "school_rating": 7.5,
+    "safety_score": 6.8,
+    "description": ""
+  },
+  {
+    "name": "Elwood",
+    "avg_rent": 580,
+    "commute_time_cbd": 28,
+    "lifestyle": [
+      "beach",
+      "quiet",
+      "family-friendly"
+    ],
+    "school_rating": 8.2,
+    "safety_score": 7.5,
+    "description": ""
+  },
+  {
+    "name": "Fitzroy",
+    "avg_rent": 620,
+    "commute_time_cbd": 12,
+    "lifestyle": [
+      "artsy",
+      "nightlife",
+      "vibrant"
+    ],
+    "school_rating": 7.0,
+    "safety_score": 6.5,
+    "description": ""
+  },
+  {
+    "name": "Carlton",
+    "avg_rent": 540,
+    "commute_time_cbd": 10,
+    "lifestyle": [
+      "student-friendly",
+      "vibrant",
+      "urban"
+    ],
+    "school_rating": 6.8,
+    "safety_score": 6.0,
+    "description": ""
+  },
+  {
+    "name": "South Yarra",
+    "avg_rent": 690,
+    "commute_time_cbd": 15,
+    "lifestyle": [
+      "luxury",
+      "nightlife",
+      "urban"
+    ],
+    "school_rating": 8.0,
+    "safety_score": 7.2,
+    "description": ""
+  },
+  {
+    "name": "Altona",
+    "avg_rent": 500,
+    "commute_time_cbd": 30,
+    "lifestyle": [
+      "beach",
+      "quiet",
+      "family-friendly"
+    ],
+    "school_rating": 7.5,
+    "safety_score": 7.0,
+    "description": ""
+  },
+  {
+    "name": "Sandringham",
+    "avg_rent": 750,
+    "commute_time_cbd": 35,
+    "lifestyle": [
+      "beach",
+      "family-friendly",
+      "quiet"
+    ],
+    "school_rating": 8.5,
+    "safety_score": 8.0,
+    "description": ""
+  },
+  {
+    "name": "Richmond",
+    "avg_rent": 630,
+    "commute_time_cbd": 10,
+    "lifestyle": [
+      "urban",
+      "nightlife",
+      "sporty"
+    ],
+    "school_rating": 7.2,
+    "safety_score": 6.9,
+    "description": ""
+  },
+  {
+    "name": "Coburg",
+    "avg_rent": 520,
+    "commute_time_cbd": 25,
+    "lifestyle": [
+      "family-friendly",
+      "quiet",
+      "multicultural"
+    ],
+    "school_rating": 7.1,
+    "safety_score": 6.8,
+    "description": ""
+  },
+  {
+    "name": "St Kilda",
+    "avg_rent": 610,
+    "commute_time_cbd": 18,
+    "lifestyle": [
+      "beach",
+      "nightlife",
+      "vibrant"
+    ],
+    "school_rating": 6.9,
+    "safety_score": 6.7,
+    "description": ""
+  },
+  {
+    "name": "Clayton",
+    "avg_rent": 470,
+    "commute_time_cbd": 35,
+    "lifestyle": ["student-friendly", "multicultural", "quiet"],
+    "school_rating": 7.8,
+    "safety_score": 6.5,
+    "description": ""
+  },
+  {
+    "name": "Burwood",
+    "avg_rent": 520,
+    "commute_time_cbd": 30,
+    "lifestyle": ["family-friendly", "student-friendly", "quiet"],
+    "school_rating": 8.0,
+    "safety_score": 7.1,
+    "description": ""
+  },
+  {
+    "name": "Docklands",
+    "avg_rent": 720,
+    "commute_time_cbd": 5,
+    "lifestyle": ["urban", "luxury", "waterfront"],
+    "school_rating": 6.5,
+    "safety_score": 6.9,
+    "description": ""
+  },
+  {
+    "name": "Point Cook",
+    "avg_rent": 490,
+    "commute_time_cbd": 40,
+    "lifestyle": ["family-friendly", "quiet", "suburban"],
+    "school_rating": 8.3,
+    "safety_score": 7.4,
+    "description": ""
+  },
+  {
+    "name": "Doncaster",
+    "avg_rent": 560,
+    "commute_time_cbd": 30,
+    "lifestyle": ["family-friendly", "shopping", "quiet"],
+    "school_rating": 8.1,
+    "safety_score": 7.3,
+    "description": ""
+  },
+  {
+    "name": "Melbourne CBD",
+    "avg_rent": 800,
+    "commute_time_cbd": 0,
+    "lifestyle": ["urban", "luxury", "nightlife", "shopping"],
+    "school_rating": 6.0,
+    "safety_score": 7.5,
+    "description": ""
+  },
+  {
+    "name": "Southbank",
+    "avg_rent": 750,
+    "commute_time_cbd": 5,
+    "lifestyle": ["urban", "luxury", "waterfront", "nightlife"],
+    "school_rating": 6.2,
+    "safety_score": 7.8,
+    "description": ""
+  },
+  {
+    "name": "East Melbourne",
+    "avg_rent": 780,
+    "commute_time_cbd": 8,
+    "lifestyle": ["luxury", "urban", "quiet"],
+    "school_rating": 7.5,
+    "safety_score": 8.2,
+    "description": ""
+  },
+  {
+    "name": "West Melbourne",
+    "avg_rent": 680,
+    "commute_time_cbd": 8,
+    "lifestyle": ["urban", "vibrant", "artsy"],
+    "school_rating": 6.8,
+    "safety_score": 7.0,
+    "description": ""
+  },
+  {
+    "name": "North Melbourne",
+    "avg_rent": 650,
+    "commute_time_cbd": 12,
+    "lifestyle": ["urban", "vibrant", "sporty"],
+    "school_rating": 7.0,
+    "safety_score": 7.2,
+    "description": ""
+  },
+  {
+    "name": "South Melbourne",
+    "avg_rent": 700,
+    "commute_time_cbd": 15,
+    "lifestyle": ["urban", "shopping", "vibrant"],
+    "school_rating": 7.3,
+    "safety_score": 7.4,
+    "description": ""
+  },
+  {
+    "name": "Collingwood",
+    "avg_rent": 640,
+    "commute_time_cbd": 15,
+    "lifestyle": ["artsy", "vibrant", "nightlife", "student-friendly"],
+    "school_rating": 6.9,
+    "safety_score": 6.8,
+    "description": ""
+  },
+  {
+    "name": "Prahran",
+    "avg_rent": 680,
+    "commute_time_cbd": 20,
+    "lifestyle": ["nightlife", "urban", "shopping", "vibrant"],
+    "school_rating": 7.2,
+    "safety_score": 7.1,
+    "description": ""
+  },
+  {
+    "name": "Windsor",
+    "avg_rent": 620,
+    "commute_time_cbd": 18,
+    "lifestyle": ["vibrant", "nightlife", "urban"],
+    "school_rating": 7.0,
+    "safety_score": 6.9,
+    "description": ""
+  },
+  {
+    "name": "Toorak",
+    "avg_rent": 950,
+    "commute_time_cbd": 25,
+    "lifestyle": ["luxury", "quiet", "family-friendly"],
+    "school_rating": 9.2,
+    "safety_score": 8.8,
+    "description": ""
+  },
+  {
+    "name": "Parkville",
+    "avg_rent": 600,
+    "commute_time_cbd": 15,
+    "lifestyle": ["student-friendly", "quiet", "urban"],
+    "school_rating": 8.5,
+    "safety_score": 7.6,
+    "description": ""
+  },
+  {
+    "name": "Kensington",
+    "avg_rent": 590,
+    "commute_time_cbd": 18,
+    "lifestyle": ["family-friendly", "quiet", "multicultural"],
+    "school_rating": 7.4,
+    "safety_score": 7.3,
+    "description": ""
+  },
+  {
+    "name": "Abbotsford",
+    "avg_rent": 620,
+    "commute_time_cbd": 18,
+    "lifestyle": ["artsy", "vibrant", "urban"],
+    "school_rating": 7.1,
+    "safety_score": 6.7,
+    "description": ""
+  },
+  {
+    "name": "Port Melbourne",
+    "avg_rent": 710,
+    "commute_time_cbd": 20,
+    "lifestyle": ["beach", "urban", "luxury"],
+    "school_rating": 7.8,
+    "safety_score": 7.6,
+    "description": ""
+  },
+  {
+    "name": "Cremorne",
+    "avg_rent": 680,
+    "commute_time_cbd": 12,
+    "lifestyle": ["urban", "quiet", "luxury"],
+    "school_rating": 7.5,
+    "safety_score": 7.8,
+    "description": ""
+  },
+  {
+    "name": "Yarraville",
+    "avg_rent": 570,
+    "commute_time_cbd": 22,
+    "lifestyle": ["family-friendly", "artsy", "multicultural"],
+    "school_rating": 7.7,
+    "safety_score": 7.2,
+    "description": ""
+  },
+  {
+    "name": "Footscray",
+    "avg_rent": 480,
+    "commute_time_cbd": 20,
+    "lifestyle": ["multicultural", "student-friendly", "vibrant"],
+    "school_rating": 6.5,
+    "safety_score": 6.2,
+    "description": ""
+  },
+  {
+    "name": "Hawthorn",
+    "avg_rent": 650,
+    "commute_time_cbd": 25,
+    "lifestyle": ["family-friendly", "quiet", "luxury"],
+    "school_rating": 8.4,
+    "safety_score": 8.0,
+    "description": ""
+  },
+  {
+    "name": "Camberwell",
+    "avg_rent": 640,
+    "commute_time_cbd": 28,
+    "lifestyle": ["family-friendly", "shopping", "quiet"],
+    "school_rating": 8.6,
+    "safety_score": 8.1,
+    "description": ""
+  },
+  {
+    "name": "Armadale",
+    "avg_rent": 720,
+    "commute_time_cbd": 30,
+    "lifestyle": ["luxury", "family-friendly", "shopping"],
+    "school_rating": 8.8,
+    "safety_score": 8.3,
+    "description": ""
+  }
+]
