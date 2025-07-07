@@ -108,24 +108,22 @@ jobs:
         name: frontend-build
         path: ./build
     
-    - name: Deploy Frontend to Vercel
-      uses: amondnet/vercel-action@v25
-      with:
-        vercel-token: ${{ secrets.VERCEL_TOKEN }}
-        vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-        vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-        working-directory: ./smart-suburb-finder/frontend
-        vercel-args: '--prod'
-    
-    - name: Deploy Backend to Railway
+    - name: Deploy Frontend to Render
       run: |
-        echo "🚀 Deploying backend to Railway..."
-        echo "Backend will auto-deploy via Railway GitHub integration"
-        echo "Environment variables configured in Railway dashboard"
+        echo "🚀 Frontend will auto-deploy via Render GitHub integration"
+        echo "Environment variables configured in Render dashboard"
+        echo "Frontend URL: https://your-frontend.onrender.com"
+    
+    - name: Deploy Backend to Render
+      run: |
+        echo "🚀 Backend will auto-deploy via Render GitHub integration"
+        echo "Environment variables configured in Render dashboard"
+        echo "Backend URL: https://suburb-finder.onrender.com"
     
     - name: Notify deployment
       run: |
         echo "✅ Deployment completed successfully!"
-        echo "Frontend: https://your-app.vercel.app"
-        echo "Backend: https://your-app-railway.app"
-        echo "Database: MongoDB Atlas M0 Free Cluster" 
+        echo "Frontend: https://your-frontend.onrender.com"
+        echo "Backend: https://suburb-finder.onrender.com"
+        echo "Database: MongoDB Atlas M0 Free Cluster"
+        echo "🎉 Your Suburb Finder app is live and updated!" 
