@@ -50,8 +50,6 @@ export default function SuburbDetail() {
 
   const suburbName = suburb.name + ' VIC';
   const mapsQuery = encodeURIComponent(suburbName);
-  const domainQuery = suburb.name.toLowerCase().replace(/\s+/g, '-') + '-vic';
-  const googleDirectionsQuery = encodeURIComponent(suburb.name + ' VIC to Melbourne CBD');
 
   return (
     <motion.div 
