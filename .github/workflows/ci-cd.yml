@@ -108,19 +108,24 @@ jobs:
         name: frontend-build
         path: ./build
     
-    - name: Deploy to staging
+    - name: Deploy Frontend to Vercel
+      uses: amondnet/vercel-action@v25
+      with:
+        vercel-token: ${{ secrets.VERCEL_TOKEN }}
+        vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+        vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+        working-directory: ./smart-suburb-finder/frontend
+        vercel-args: '--prod'
+    
+    - name: Deploy Backend to Railway
       run: |
-        echo "🚀 Deploying to staging environment..."
-        echo "Frontend build ready for deployment"
-        echo "Backend ready for deployment"
-        # Add your deployment commands here
-        # Examples:
-        # - Deploy to Heroku, Vercel, AWS, etc.
-        # - Copy files to server via SCP
-        # - Update Docker containers
+        echo "🚀 Deploying backend to Railway..."
+        echo "Backend will auto-deploy via Railway GitHub integration"
+        echo "Environment variables configured in Railway dashboard"
     
     - name: Notify deployment
       run: |
         echo "✅ Deployment completed successfully!"
-        echo "Frontend: Deployed static files"
-        echo "Backend: API server deployed" 
+        echo "Frontend: https://your-app.vercel.app"
+        echo "Backend: https://your-app-railway.app"
+        echo "Database: MongoDB Atlas M0 Free Cluster" 

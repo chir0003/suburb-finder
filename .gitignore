@@ -76,7 +76,7 @@ dist
 
 # Gatsby files
 .cache/
-public
+# public - REMOVED: React needs the public folder for index.html
 
 # Storybook build outputs
 .out
