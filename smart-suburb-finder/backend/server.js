@@ -7,7 +7,16 @@ const axios = require('axios');
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: [
+    'https://suburb-finder-1.onrender.com',
+    'https://suburb-finder.onrender.com',
+    'http://localhost:3000'
+  ],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 // Function to generate suburb description using OpenRouter
 async function generateSuburbDescription(suburb) {
