@@ -1,0 +1,44 @@
+name: PR Checks
+
+on:
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  quick-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+    
+    # Frontend checks
+    - name: Install frontend dependencies
+      working-directory: ./smart-suburb-finder/frontend
+      run: npm ci
+    
+    - name: Run frontend linting and tests
+      working-directory: ./smart-suburb-finder/frontend
+      run: |
+        npm run test -- --ci --watchAll=false --coverage=false
+        npm run build
+    
+    # Backend checks
+    - name: Install backend dependencies
+      working-directory: ./smart-suburb-finder/backend
+      run: npm ci
+    
+    - name: Check backend syntax
+      working-directory: ./smart-suburb-finder/backend
+      run: |
+        node -c server.js
+        echo "✅ Backend syntax check passed"
+    
+    - name: Security audit
+      run: |
+        cd smart-suburb-finder/frontend && npm audit --audit-level=moderate || true
+        cd ../backend && npm audit --audit-level=moderate || true 
