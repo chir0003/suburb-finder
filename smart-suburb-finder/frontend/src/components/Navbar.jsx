@@ -18,7 +18,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.navContainer}>
         <Link to="/" className={styles.logo} onClick={closeMenu}>
-          <span className={styles.logoIcon}>🏠</span>
+          <img src="/logo.svg" alt="Smart Suburb Finder Logo" className={styles.logoIcon} />
           <span className={styles.logoText}>Smart Suburb Finder</span>
         </Link>
         
