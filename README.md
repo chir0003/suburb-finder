@@ -1,34 +1,34 @@
-# 🏠 Smart Suburb Finder
+# Smart Suburb Finder
 
 A full-stack web application that helps users find the perfect Melbourne suburb based on their budget, commute preferences, and lifestyle needs. Features AI-powered recommendations, interactive chatbot, and real-time data analysis.
 
-## 🌐 Live Demo
+## Live Demo
 
 - **Frontend**: [https://suburb-finder-1.onrender.com](https://suburb-finder-1.onrender.com)
 - **Backend API**: [https://suburb-finder.onrender.com](https://suburb-finder.onrender.com)
 
-## ✨ Features
+## Features
 
-### 🎯 Core Functionality
+### Core Functionality
 - **Smart Recommendations**: AI-powered suburb matching based on user preferences
 - **Multi-Criteria Search**: Budget, commute time, and lifestyle preferences
 - **Real-time Scoring**: Advanced algorithm with weighted scoring system
 - **Interactive Chatbot**: AI assistant for Melbourne suburb queries
 
-### 🎨 User Experience
+### User Experience
 - **Modern UI/UX**: Clean, responsive design with smooth animations
 - **Mobile-First**: Optimized for all device sizes
 - **Interactive Elements**: Hover effects, transitions, and micro-interactions
 - **Custom Branding**: Unique logo and favicon design
 
-### 🔧 Technical Features
+### Technical Features
 - **RESTful API**: Clean, well-documented endpoints
 - **MongoDB Integration**: NoSQL database with Mongoose ODM
 - **AI Integration**: OpenRouter API for intelligent recommendations
 - **CI/CD Pipeline**: Automated testing and deployment
 - **Environment Management**: Secure configuration handling
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 smart-suburb-finder/
@@ -69,7 +69,7 @@ smart-suburb-finder/
 └── package.json                     # Root dependencies
 ```
 
-## 🚀 Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React.js 19.1.0** - Modern UI framework
@@ -96,7 +96,7 @@ smart-suburb-finder/
 - **Railway** - Backend hosting
 - **MongoDB Atlas** - Cloud database
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - Node.js (v16 or higher)
@@ -138,46 +138,7 @@ npm start
 npm start
 ```
 
-## 🔧 API Endpoints
-
-### POST `/api/recommend`
-Get suburb recommendations based on user preferences.
-
-**Request Body:**
-```json
-{
-  "budget": 500,
-  "commute": 30,
-  "lifestyle": ["cafes", "parks", "shopping"]
-}
-```
-
-**Response:**
-```json
-[
-  {
-    "name": "Fitzroy",
-    "avg_rent": 480,
-    "commute_time_cbd": 15,
-    "lifestyle": ["cafes", "art", "nightlife"],
-    "school_rating": 8,
-    "safety_score": 7,
-    "description": "Vibrant inner-city suburb..."
-  }
-]
-```
-
-### POST `/api/chat`
-AI chatbot for Melbourne suburb queries.
-
-**Request Body:**
-```json
-{
-  "message": "What's the best suburb for families?"
-}
-```
-
-## 🎯 Algorithm Details
+## Algorithm Details
 
 ### Scoring System
 The recommendation algorithm uses a weighted scoring system:
@@ -199,7 +160,7 @@ The recommendation algorithm uses a weighted scoring system:
 - Includes slightly over-budget options (up to 3 results)
 - Shows variety while maintaining quality
 
-## 🚀 Deployment
+## Deployment
 
 ### Frontend (Render)
 - Connected to GitHub repository
@@ -218,7 +179,7 @@ The recommendation algorithm uses a weighted scoring system:
 - Automatic backups
 - Global distribution
 
-## 🔄 CI/CD Pipeline
+## CI/CD Pipeline
 
 ### GitHub Actions Workflows
 1. **`ci-cd.yml`** - Full pipeline for main branch
@@ -231,68 +192,18 @@ The recommendation algorithm uses a weighted scoring system:
    - Security audits
    - Fast feedback
 
-### Automated Processes
-- ✅ Code linting and formatting
-- ✅ Unit and integration tests
-- ✅ Security vulnerability scanning
-- ✅ Build artifact generation
-- ✅ Automatic deployment to staging/production
 
-## 🎨 Design System
 
-### Color Palette
-- **Primary**: #4F46E5 (Indigo)
-- **Secondary**: #F59E0B (Amber)
-- **Accent**: #E75480 (Pink)
-- **Background**: #FFFFFF (White)
-- **Text**: #1F2937 (Gray)
 
-### Typography
-- **Headings**: Bold, modern sans-serif
-- **Body**: Clean, readable font
-- **Interactive**: Hover effects and transitions
 
-### Components
-- **Custom Logo**: SVG-based, scalable design
-- **Responsive Navbar**: Mobile-first approach
-- **Interactive Forms**: Real-time validation
-- **Smooth Animations**: Framer Motion integration
-
-## 📊 Performance Metrics
-
-- **Lighthouse Score**: 95+ (Performance, Accessibility, Best Practices)
-- **First Contentful Paint**: < 1.5s
-- **Largest Contentful Paint**: < 2.5s
-- **Cumulative Layout Shift**: < 0.1
-
-## 🔒 Security Features
-
-- **CORS Configuration**: Proper cross-origin handling
-- **Environment Variables**: Secure API key management
-- **Input Validation**: Server-side validation
-- **Rate Limiting**: API request throttling
-- **HTTPS**: Secure connections
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Melbourne Data**: Open-source suburb information
 - **OpenRouter**: AI language model API
 - **Render & Railway**: Free hosting platforms
 - **MongoDB Atlas**: Free cloud database
 
-## 📞 Contact
+## Contact
 
 - **GitHub**: [@chir0003](https://github.com/chir0003)
 - **LinkedIn**: [Chirag Kumar](https://www.linkedin.com/in/chirag-kumar-4b4870319/)
@@ -300,4 +211,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-⭐ **Star this repository if you found it helpful!** 
+**Star this repository if you found it helpful!** 
