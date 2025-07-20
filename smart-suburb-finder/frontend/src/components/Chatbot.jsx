@@ -116,7 +116,7 @@ export default function Chatbot() {
             transition={{ duration: 0.3 }}
           >
             <div className={styles.chatHeader}>
-              <h3>Melbourne Suburb Assistant</h3>
+              <h3>CommuteNest Assistant</h3>
               <button 
                 className={styles.closeBtn}
                 onClick={() => setIsOpen(false)}

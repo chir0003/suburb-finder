@@ -14,8 +14,8 @@ export default function Landing() {
       transition={{ duration: 1 }}
     >
       <div className={styles.landingContent}>
-        <h1>Find Your Perfect Suburb in Melbourne</h1>
-        <p>Discover the best places to live based on your lifestyle, budget, and commute.</p>
+        <h1>Welcome to CommuteNest</h1>
+        <p>Discover the best Melbourne suburbs for your lifestyle, budget, and commute with AI-powered recommendations.</p>
         <button className={sharedStyles.findBtn} onClick={() => navigate('/find')}>Find Suburb</button>
       </div>
     </motion.div>

@@ -18,8 +18,8 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.navContainer}>
         <Link to="/" className={styles.logo} onClick={closeMenu}>
-          <img src="/logo.svg" alt="Smart Suburb Finder Logo" className={styles.logoIcon} />
-          <span className={styles.logoText}>Smart Suburb Finder</span>
+          <img src="/logo.svg" alt="CommuteNest Logo" className={styles.logoIcon} />
+          <span className={styles.logoText}>CommuteNest</span>
         </Link>
         
         <div className={`${styles.navLinks} ${isMenuOpen ? styles.navOpen : ''}`}>
