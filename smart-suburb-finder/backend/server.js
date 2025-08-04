@@ -11,6 +11,9 @@ app.use(cors({
   origin: [
     'https://suburb-finder-1.onrender.com',
     'https://suburb-finder.onrender.com',
+    'https://suburb-finder-new.onrender.com',
+    'https://suburb-finder-frontend.onrender.com',
+    'https://commutenest.onrender.com',
     'http://localhost:3000'
   ],
   credentials: true,
@@ -231,6 +234,6 @@ Please provide a helpful, informative response about Melbourne suburbs, neighbor
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on port ${PORT}`);
 }); 
