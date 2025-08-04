@@ -1,10 +1,11 @@
-/* Navbar.module.css */
+/* Navbar.module.css - Clean White & Pink Theme */
 .navbar {
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(255, 182, 213, 0.1);
+  background: #ffffff;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .navContainer {
@@ -20,26 +21,28 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #e75480;
-  font-weight: bold;
+  color: #ff69b4;
+  font-weight: 700;
   font-size: 1.5rem;
-  letter-spacing: 1px;
-  transition: transform 0.2s;
+  letter-spacing: -0.5px;
+  transition: all 0.3s ease;
 }
 
 .logo:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
+  color: #e91e63;
 }
 
 .logoIcon {
   width: 32px;
   height: 32px;
-  margin-right: 0.5rem;
-  transition: transform 0.2s ease;
+  margin-right: 0.75rem;
+  transition: transform 0.3s ease;
 }
 
 .logoText {
   display: block;
+  font-family: 'Inter', sans-serif;
 }
 
 .navLinks {
@@ -50,24 +53,27 @@
 
 .navLink {
   text-decoration: none;
-  color: #e75480;
+  color: #666666;
   font-weight: 500;
-  font-size: 1.1rem;
-  transition: all 0.2s;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
   position: relative;
+  font-family: 'Inter', sans-serif;
 }
 
 .navLink:hover {
   color: #ff69b4;
-  background: #fff0f6;
+  background: #fef7f9;
+  transform: translateY(-1px);
 }
 
 .navLink.active {
   color: #ff69b4;
-  background: #fff0f6;
+  background: #fef7f9;
   font-weight: 600;
+  box-shadow: 0 2px 8px rgba(255, 105, 180, 0.15);
 }
 
 /* Hamburger Menu */
@@ -79,12 +85,18 @@
   cursor: pointer;
   padding: 0.5rem;
   gap: 4px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.hamburger:hover {
+  background: #fef7f9;
 }
 
 .hamburgerLine {
   width: 25px;
   height: 3px;
-  background: #e75480;
+  background: #ff69b4;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -112,15 +124,16 @@
     top: 70px;
     left: 0;
     right: 0;
-    background: #fff;
+    background: #ffffff;
     flex-direction: column;
     padding: 2rem;
     gap: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
+    border-bottom: 1px solid #f0f0f0;
   }
   
   .navLinks.navOpen {
@@ -132,15 +145,31 @@
   .hamburger {
     display: flex;
   }
+  
+  .navLink {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  
+  .navLink:hover {
+    background: #fef7f9;
+    transform: none;
+  }
 }
 
 @media (max-width: 480px) {
   .logo {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   
   .logoIcon {
     width: 28px;
     height: 28px;
+  }
+  
+  .navContainer {
+    padding: 0.75rem 1rem;
   }
 } 

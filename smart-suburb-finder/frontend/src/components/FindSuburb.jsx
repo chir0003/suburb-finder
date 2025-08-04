@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import styles from './FindSuburb.module.css';
 import sharedStyles from '../styles/shared.module.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const lifestyleOptions = [
   'vibrant',
@@ -27,6 +27,14 @@ export default function FindSuburb() {
   const [lifestyle, setLifestyle] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+
+  // Handle pre-selected lifestyle filters from landing page
+  useEffect(() => {
+    if (location.state?.preSelectedLifestyle) {
+      setLifestyle(location.state.preSelectedLifestyle);
+    }
+  }, [location.state]);
 
   const handleLifestyleChange = (option) => {
     setLifestyle((prev) =>
@@ -67,7 +75,42 @@ export default function FindSuburb() {
       transition={{ duration: 0.7 }}
     >
       <div className={styles.findContent}>
-        <h2>Find the Best Suburb for You</h2>
+        <motion.h2 
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.2 }}
+        >
+          Find Your Perfect Melbourne Suburb
+        </motion.h2>
+        <motion.p 
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.4 }}
+          style={{ color: '#666666', marginBottom: '2rem', fontSize: '1.1rem' }}
+        >
+          Tell us what you're looking for and we'll find the best suburbs that match your lifestyle and budget.
+        </motion.p>
+        
+        {location.state?.fromLanding && (
+          <motion.div 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            style={{
+              background: '#fef7f9',
+              border: '2px solid #ff69b4',
+              borderRadius: '12px',
+              padding: '1rem',
+              marginBottom: '2rem',
+              textAlign: 'center',
+              color: '#ff69b4',
+              fontWeight: '500'
+            }}
+          >
+            ✨ Pre-selected filters from landing page applied!
+          </motion.div>
+        )}
+        
         <form className={styles.suburbForm} onSubmit={handleSubmit}>
           <div className={styles.formGroup}>
             <label>Budget (per week in $):</label>
@@ -110,7 +153,16 @@ export default function FindSuburb() {
               ))}
             </div>
           </div>
-          <button className={sharedStyles.findBtn} type="submit" disabled={isLoading}>
+          <motion.button 
+            className={styles.findBtn} 
+            type="submit" 
+            disabled={isLoading}
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.6 }}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+          >
             {isLoading ? (
               <div className={styles.loadingContent}>
                 <div className={styles.loadingSpinner}></div>
@@ -119,7 +171,7 @@ export default function FindSuburb() {
             ) : (
               'Get Recommendations'
             )}
-          </button>
+          </motion.button>
         </form>
       </div>
     </motion.div>
