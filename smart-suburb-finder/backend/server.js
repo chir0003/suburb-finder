@@ -18,6 +18,11 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
+// Health check endpoint for Fly.io
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'OK', message: 'Backend is running' });
+});
+
 // Function to generate suburb description using OpenRouter
 async function generateSuburbDescription(suburb) {
   try {
